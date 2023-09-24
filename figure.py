@@ -3,7 +3,7 @@ from options import GameObject
 
 
 class Figure(GameObject):
-    def __init__(self, x, y, r, color, speed):
+    def __init__(self, x, y, r, color):
         """
         Initialize the Figure object.
 
@@ -17,7 +17,7 @@ class Figure(GameObject):
         Returns:
             None
         """
-        super().__init__(x - r, y - r, r * 2, r * 2, speed)
+        super().__init__(x - r, y - r, r * 2, r * 2)
         self.radius = r
         self.diameter = r * 2
         self.color = color

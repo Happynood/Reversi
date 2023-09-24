@@ -1,6 +1,6 @@
 import pygame
 from options import GameObject
-
+import config
 
 class Line(GameObject):
     def __init__(self, x, y, w, h, color, special_effect=None):
@@ -20,6 +20,10 @@ class Line(GameObject):
         """
         super().__init__(x, y, w, h)
         self.color = color
+        self.x =x
+        self.y =y
+        self.w =w
+        self.h =h
         self.special_effect = special_effect
 
     def draw(self, surface):
@@ -32,5 +36,4 @@ class Line(GameObject):
         Returns:
             None
         """
-        pygame.draw.line(surface, self.color, (self.x, self.y), (self.w, self.h), 1000)
-        
+        pygame.draw.line(surface, self.color, (self.x, self.y), (self.w, self.h), 3)

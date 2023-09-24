@@ -1,8 +1,8 @@
 import colors
 
-screen_width = 1200
-screen_height = 1200
-background_image = 'image/background.jpg'
+screen_width = 1000
+screen_height = 800
+background_image = 'image/background.png'
 
 frame_rate = 60
 
@@ -22,13 +22,15 @@ effect_duration = 20
 
 sounds_effects = dict(
     lose='sound/lose.wav',
-    motion='sound_effects/motion.mp3',
+    motion='sound/motion.mp3',
     start='sound/start.wav',
     win='sound/win.wav',
 )
 
 message_duration = 2
 
+paddle_color = colors.RED1
+paddle_radius = 10
 button_text_color = colors.WHITE,
 button_normal_back_color = colors.INDIANRED1
 button_hover_back_color = colors.INDIANRED2
